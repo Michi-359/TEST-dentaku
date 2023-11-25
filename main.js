@@ -25,7 +25,7 @@ function num_click(val){
     result.value = "0.";
   }else if(result.value == "0"){
     result.value = val;
-  }else if(result.value.slice(0,-2) == "+0" || "-0" || "/0" || "*0" && val !== "."){
+  }else if(result.value.slice(0,-2) == "+0" || "-0" || "/0" || "*0" && val != "."){
     result.value.slice(0,-1)+val;
   }else{
     result.value += val;
